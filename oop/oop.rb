@@ -3,13 +3,18 @@ class Pessoa
     def initialize(nome)
         @nome = nome
     end
+
+    def imprimir_ola
+        puts "Olá #{@nome}"
+    end
 end
+
 
 cadu = Pessoa.new("cadu")
 
 pessoa2 = Pessoa.new("pessoa")
 
-p cadu
-p pessoa2
+cadu.imprimir_ola
+pessoa2.imprimir_ola
 
 
