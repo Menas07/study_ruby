@@ -1,23 +1,30 @@
-class GoodDog
-    attr_acccessor :name
-
-    def initialize(name)
-        @name = name
+class Sensor
+    def instalar
+        puts"Estou instalando o sensor"
     end
 
-    def speak
-        "#{@name} says arf!"
+    def iniciar
+        puts "estou inicializando o sensor"
+    end
+
+    def coletar_metricas
+        #sensor normal
+        puts "estou coletando metricas"
+        puts "estou analizando metricas"
     end
 end
 
+class SensorTemperatura < Sensor
+end
 
-sparky = GoodDog.new
 
-puts sparky.speak
-puts sparky.name
-sparky.name = "spartacus"
-puts sparky.name
+sensor = SensorTemperatura.new
+sensor.instalar
+sensor.iniciar
+sensor.coletar_metricas
 
+
+    
 
 
 
